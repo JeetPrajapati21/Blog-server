@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-    origin: "https://blog-jeet.herokuapp.com"
+    origin: "https://blog-jeet.netlify.app"
 };
 
 app.use(cors(corsOptions));
