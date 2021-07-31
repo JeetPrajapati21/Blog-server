@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-    origin: "http://localhost:5000"
+    origin: "https://blog-jeet.herokuapp.com"
 };
 
 app.use(cors(corsOptions));
