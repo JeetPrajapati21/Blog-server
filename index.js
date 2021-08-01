@@ -16,7 +16,7 @@ const Grid = require("gridfs-stream");
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-    origin: "http://localhost:5000"
+    origin: "https://blog-jeet.netlify.app"
 };
 
 let gfs;
@@ -24,7 +24,6 @@ let gfs;
 app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
-// app.use("/images",  express.static(path.join(__dirname, "/images")));
 
 connection();
 
