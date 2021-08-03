@@ -13,10 +13,6 @@ const PostSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    // category: {
-    //     type: String,
-    //     default: "Others"
-    // },
     category: [
         {
             type: String,
