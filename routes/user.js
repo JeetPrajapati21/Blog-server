@@ -51,4 +51,17 @@ router.get("/", async (req, res) => {
     }
 });
 
+router.get("/singleUser/:id", async (req, res) => {
+    const id = req.params.id;
+    if (id) {
+        try {
+            let user = await User.findById(id);
+    
+            res.status(200).json(user.profilePhoto);
+        } catch (error) {
+            res.status(500).json(error);
+        }
+    }
+});
+
 module.exports = router;
