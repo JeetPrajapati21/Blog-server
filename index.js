@@ -14,7 +14,6 @@ const upload = require("./routes/upload");
 const Grid = require("gridfs-stream");
 
 const PORT = process.env.PORT || 5000;
-
 const corsOptions = {
     origin: "https://blog-jeet.netlify.app"
 };
